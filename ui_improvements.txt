@@ -1,0 +1,33 @@
+UI/UX Audit Report & Improvement List for Trip Planner
+
+1. Visual Appeal & Modernness
+------------------------------
+* Observations: The application features a sleek dark theme with modern glassmorphism effects and a vibrant green accent color. The typography is clean and modern.
+* Improvements:
+  - Smoother Transitions: The shift from the centered search modal on the landing page to the top-bar navigation when results appear is somewhat abrupt. Adding a smooth animation or transition would enhance the "premium" feel.
+  - Declutter Result View: When search results are active, the UI becomes crowded. Reducing border widths or increasing padding between the main search bar and the results area would help.
+
+2. Layout & Information Architecture
+-------------------------------------
+* Observations: The interface uses multiple sets of buttons (Map Layers vs. Budget Tabs) which leads to cognitive load.
+* Improvements:
+  - Unify Terminology: There are two "Hotels" buttons—one for map layers and one for budget options. This is confusing. Recommend renaming the Map Layer to "Show Hotels" or "View on Map" and the Budget tab to "Stay Options."
+  - Grid Layout for Cards: On desktop, the flight, hotel, and transport cards are very wide. Implementing a 2 or 3-column grid would allow users to compare more options at once without excessive scrolling.
+  - Density Management: The city information card on the right is very text-heavy. Use more icons for weather data (highs/lows) and a simple progress bar or numeric score for safety instead of dots.
+
+3. Usability & Interactivity
+-----------------------------
+* Observations: Several interactive elements are too small or lack clarity.
+* Improvements:
+  - Redesign Selection Checkboxes: The checkboxes to "Select" a flight or hotel are tiny and tucked in the top-left corner. They should be larger and perhaps styled as a "Select this option" button or a more prominent checkbox in the card's footer.
+  - Label Circular Metrics: The circular numbers (e.g., 84, 70) in the cards currently have no labels. Most users won't know if these are "Value Scores," "Rating Percentages," or "Popularity." Adding a small label like "Value Score" above them is essential.
+  - Input Contrast: The labels for input fields ("From," "To," etc.) use low-contrast grey text. Increasing the contrast or size would improve accessibility.
+  - Enhanced Empty States: The "No results yet" state is plain text. Adding a travel-themed illustration or a "Where to next?" prompt would make it more engaging.
+  - Improved Navigation Logic: The "Hide results" button collapses the cards but leaves the City Info card and Budget Tabs visible. It should ideally collapse the entire bottom drawer to reveal more of the map.
+
+4. Typography & Color Palette
+------------------------------
+* Observations: The color palette is well-chosen, but typography hierarchy can be improved.
+* Improvements:
+  - Hierarchy in City Info: Use bold headers or different font sizes to separate "Safety," "Best Time," and "Airport" data from the long city description.
+  - Action Clarity: Brighten the "X" (clear) icons in the search fields to make them more discoverable.
